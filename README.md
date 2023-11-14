@@ -1,56 +1,36 @@
-Static Site hosted on Netlify with content from Contentful.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Configure
-Create a `contentful.js` configuration file in `config/contentful.json`;
+## Getting Started
 
-```
-module.exports = {
-  spaceId: "...",
-  contentDeliveryAccessToken: "...",
-  contentPreviewAccessToken: "...",
-};
+First, run the development server:
 
-```
-
-# Build
-Build (incrementally [TODO]) using the Contentful Sync API
-https://www.contentful.com/developers/docs/javascript/tutorials/using-the-sync-api-with-js/
-```
-npm run build
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-# Static Site
-A static site will be generated in `public/`.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Serve
-```
-npm start
-```
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-# Webhooks
-Configure settings for Continuous Deployment from a Git repository
-https://app.netlify.com/sites/mowebev/settings/deploys
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Configure a build webhook in Settings > Webhooks
-https://github.com/richard-flosi/mowebev/settings/hooks
+## Learn More
 
-Add a Webhook to Netlify when Contentful content changes
-https://www.contentful.com/developers/docs/tutorials/general/automate-site-builds-with-webhooks/
+To learn more about Next.js, take a look at the following resources:
 
-# Netlify Forms
-https://app.netlify.com/sites/mowebev/forms
-Docs: https://www.netlify.com/docs/form-handling/
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-// TODO Incremental Builds using nextSyncToken
-// Sync deltas don't include updates for related items.
-// i.e. changing a tag, didn't trigger any changes for the post that was using the tag.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-// TODO Remove Unpublised pages
+## Deploy on Vercel
 
-// TODO save nextSyncToken on Netlify side for incremental builds
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-// TODO Semantic Markup
-
-// TODO Aria Compliant
-
-// TODO Schema.org Test
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

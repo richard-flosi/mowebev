@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: '/mowebev'
-}
+const nextConfig = {}
 
 module.exports = nextConfig

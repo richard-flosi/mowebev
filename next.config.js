@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    assetPrefix: "mowebev-assets"
+}
 
 module.exports = nextConfig
